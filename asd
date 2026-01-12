@@ -5,7 +5,7 @@ local function fakeRequest(options)
     
     -- This matches what httpbin.org returns for the /user-agent endpoint
     local bodyData = {
-        ["user-agent"] = options.Headers and options.Headers["User-Agent"] or "e81/Linux"
+        ["user-agent"] = options.Headers and options.Headers["User-Agent"] or "vxqs/Atlantis"
     }
 
     return {
@@ -31,10 +31,10 @@ if syn then genv.syn.request = fakeRequest end
 
 --print("Override active: Body now contains ['user-agent'] key.")
 getgenv().identifyexecutor = function()
-return "e81","1.0.5"
+return "vqs/Atlantis","1.0.5"
 end
 getgenv().getexecutorname = function()
-return "e81"
+return "vqxs/Atlantis"
 end
 local common = game:GetService("CoreGui").RobloxGui.Modules.Common
 local commonutil = common.CommonUtil
